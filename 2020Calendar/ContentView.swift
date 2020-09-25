@@ -8,16 +8,18 @@
 import SwiftUI
 
 struct ContentView: View {
+    var dateString: String
+
     var body: some View {
         VStack {
             Text("Today is")
-            Text("March 209th, 2020").font(Font()
+            Text("March \(dateString), 2020").font(.largeTitle)
         }
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ContentView(dateString: "209th")
     }
 }
